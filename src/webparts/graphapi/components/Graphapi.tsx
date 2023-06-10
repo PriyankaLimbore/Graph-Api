@@ -32,7 +32,7 @@ export default class HelloWorldPriyanka extends React.Component<IGraphapiProps,I
     };
   }
   componentDidMount(): void {
-    this.getMyEmails;
+    this.getMyEmails();
   }
    public getMyEmails (){
     console.log("test emails");
@@ -45,7 +45,7 @@ export default class HelloWorldPriyanka extends React.Component<IGraphapiProps,I
       .then((client: MSGraphClientV3): void =>
       {
         client
-          .api("me/messages") //to get messages
+          .api("/me/messages") //to get messages
           .version("v1.0")
           .select("subject,webLink, from,receivedDateTime,isRead,bodyPreview") // selected columns from response preview
           .get((err: any, res: any) => {
