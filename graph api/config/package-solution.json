@@ -1,0 +1,62 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "graph-api-client-side-solution",
+    "id": "b31480fa-dcdb-48e2-bfd1-7b560050497a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.1"
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "microsoft graph",
+        "scope": "Mail.Read"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read"
+      },
+      {
+        "resource": "microsoft graph",
+        "scope": "Directory.Read.All"
+      },
+      {
+        "resource": "microsoft graph",
+        "scope": "Directory.ReadWr"
+      }
+    ],
+    "metadata": {
+      "shortDescription": {
+        "default": "graph-api description"
+      },
+      "longDescription": {
+        "default": "graph-api description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "graph-api Feature",
+        "description": "The feature that activates elements of the graph-api solution.",
+        "id": "4ebadc33-f2fc-49e9-921f-adfaec3ffd6c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/graph-api.sppkg"
+  }
+}
